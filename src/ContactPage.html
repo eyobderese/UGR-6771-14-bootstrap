@@ -1,96 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
   </head>
-  <body>
+  <body class="bg-body-tertiary">
     <header>
-      <h2 class="logo">Eyob Derese</h2>
-
-      <button class="btn-tagle">
-        <svg class="icon-aside icon--white">
-          <use xlink:href="images/sprite.svg#three-horizontal-lines-icon"></use>
-        </svg>
-      </button>
+      <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Eyob Derese</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-row-reverse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="HomePage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutPage.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ProjectPage.html">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="RecommendationPage.html"
+                  >Recommendation</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CVPage.html">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ContactPage.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <div class="main-aside">
-      <main>
-        <section class="contact">
-          <h1 class="heading">Contact Me</h1>
-          <p>
-            If you want to know more about me or my work, or if you would just
-            like to say hello, send me a message. I'd love to hear from you.
-          </p>
-          <form action="post">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
-            <br />
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
-            <br />
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="whrite your message here..."
-            ></textarea>
-            <br />
-            <input type="submit" class="btn" />
-          </form>
-          <br />
-        </section>
-      </main>
-    </div>
+    <section class="main-aside container-fluid mt-5">
+      <div class="row d-flex mt-4 ms-4">
+        <aside class="col-md-3 bg-info d-none d-md-flex flex-column">
+          <div class="aside__header row p-4 gap-2">
+            <img
+              class="aside__image img-fluid"
+              src="images/cartoon.jpg"
+              alt="eyob's photo"
+            />
+            <button class="btn btn-primary w-75 m-auto">Eyob Derese</button>
+          </div>
 
-    <footer>
-      <p class="copyright">
-        copyright &copy; 2023 devlelop with
-        <svg class="icon">
-          <use xlink:href="images/sprite.svg#red-heart-icon"></use>
-        </svg>
-        by Eyob
+          <section class="aside__information row flex-column">
+            <div class="aside__contact d-flex gap-3">
+              <span class="d-flex align-items-center">
+                <img
+                  class="h-50"
+                  src="images/icons/icons8-envelope-100.png"
+                  alt=""
+                />
+              </span>
+              <p class="align-self-center">
+                <span class="d-block">Email</span> eyob.derese@ aait.edu.et
+              </p>
+            </div>
+
+            <div class="aside__contact d-flex gap-3">
+              <span class="d-flex align-items-center flex-grow-0">
+                <img
+                  class="h-50"
+                  src="images/icons/icons8-smartphone-100.png"
+                  alt=""
+                />
+              </span>
+              <p class="align-self-center">
+                <span class="d-block">Phone</span> +251-973385181
+              </p>
+            </div>
+
+            <div class="aside__contact d-flex gap-3">
+              <span class="d-flex align-items-center flex-grow-0">
+                <img
+                  class="h-50"
+                  src="images/icons/icons8-location-pin-100.png"
+                  alt=""
+                />
+              </span>
+              <div class="align-self-center">
+                <span class="d-block">Location</span>
+                <address>Addis Ababa, Ethiopia</address>
+              </div>
+            </div>
+            <div class="aside__contact d-flex gap-3">
+              <span class="d-flex align-items-center flex-grow-0">
+                <img
+                  class="h-50"
+                  src="images/icons/icons8-calendar-100.png"
+                  alt=""
+                />
+              </span>
+              <p class="align-self-center">
+                <span class="d-block">Birthday</span>20-05-2002
+              </p>
+            </div>
+          </section>
+        </aside>
+
+        <main class="col-md-9">
+          <section class="container card py-3 mt-3">
+            <h1 class="card-header-title">Contact Me</h1>
+            <p class="modal-card-body">
+              If you want to know more about me or my work, or if you would just
+              like to say hello, send me a message. I'd love to hear from you.
+            </p>
+
+            <form
+              name="submit-to-google-sheet"
+              action="https://formsubmit.co/eyobderese123@gmail.com"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control" />
+              </div>
+              <br />
+              <div class="card-content">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                />
+              </div>
+              <br />
+              <div class="card-content">
+                <label class="form-label" for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="whrite your message here..."
+                  class="form-control"
+                ></textarea>
+              </div>
+              <br />
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </section>
+        </main>
+      </div>
+    </section>
+
+    <footer
+      class="modal-footer bg-dark-subtle d-flex justify-content-center justify-content-sm-between p-2"
+    >
+      <p class="footer__copyright md:ml-10">
+        copyright &copy; 2023 devlelop by Eyob
       </p>
-      <div class="social-midea">
-        <a href="#">
-          <svg class="icon icon--white">
-            <use
-              xlink:href="images/sprite.svg#facebook-app-round-white-icon"
-            ></use>
-          </svg>
+      <div class="footer__social-midea d-flex">
+        <a href="#" class="w-50 h-50">
+          <img
+            class="w-50 h-50"
+            src="images/icons/facebook-app-round-white-icon.svg"
+            alt="facebook logo"
+          />
         </a>
-        <a href="#">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#x-social-media-black-icon"></use>
-          </svg>
-        </a>
-
-        <a href="#">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#telegram-white-icon"></use>
-          </svg>
+        <a href="#" class="w-50 h-50">
+          <img
+            class="w-50 h-50"
+            src="images/icons/x-social-media-black-icon.svg"
+            alt=""
+          />
         </a>
 
-        <a href="#">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#icons8-linkedin"></use>
-          </svg>
+        <a href="#" class="w-50 h-50">
+          <img
+            class="w-50 h-50"
+            src="images/icons/telegram-white-icon.svg"
+            alt=""
+          />
         </a>
 
-        <a href="#">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#icons8-github"></use>
-          </svg>
+        <a href="#" class="w-50 h-50">
+          <img
+            class="w-50 h-50"
+            src="images/icons/icons8-linkedin.svg"
+            alt=""
+          />
+        </a>
+
+        <a href="#" class="w-50 h-50">
+          <img class="w-50 h-50" src="images/icons/icons8-github.svg" alt="" />
         </a>
       </div>
     </footer>
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

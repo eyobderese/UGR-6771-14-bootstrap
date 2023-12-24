@@ -1,154 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <title>Recommendation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
   </head>
-  <body>
+  <body class="bg-body-tertiary">
     <header>
-      <h2 class="logo">Eyob Derese</h2>
-
-      <button class="btn-tagle">
-        <svg class="icon-aside icon--white">
-          <use xlink:href="images/sprite.svg#three-horizontal-lines-icon"></use>
-        </svg>
-      </button>
+      <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Eyob Derese</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-row-reverse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="HomePage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutPage.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ProjectPage.html">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="RecommendationPage.html"
+                  >Recommendation</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CVPage.html">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ContactPage.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <div class="main-aside">
-      <main>
-        <section class="card">
-          <figure class="image-content">
-            <img src="images/Timnit_Gebru_crop.jpg" alt="Timinit Gebru" />
-
-            <figcaption>
-              <a href="#">Dr. Timinit Gebru</a>, computer scientist
-            </figcaption>
-          </figure>
-          <div class="content">
-            <h1>Let me tell you about Eyob</h1>
-            <p>
-              I highly recommend Eyob Derese as a software engineer who not only
-              possesses exceptional technical skills but also excels in
-              interpersonal communication. Eyob is not just proficient in coding
-              and problem-solving; he is also remarkably approachable and adept
-              at connecting with people. In my experience working with Eyob, I
-              have witnessed his ability to effectively communicate complex
-              technical concepts to both technical and non-technical
-              stakeholders. His approachability creates a positive and
-              collaborative work environment, making him an invaluable team
-              member. Eyob's willingness to engage in open and constructive
-              dialogue fosters a culture of innovation and shared understanding.
-            </p>
-
-            <button class="btn btn--small">Read More</button>
+    <section class="main-aside container-fluid mt-5">
+      <div class="row d-flex mt-4 ms-4">
+        <aside class="col-md-3 bg-info d-none d-md-flex flex-column">
+          <div class="aside__header row p-4 gap-2">
+            <img
+              class="aside__image img-fluid"
+              src="images/cartoon.jpg"
+              alt="eyob's photo"
+            />
+            <button class="btn btn-primary w-75 m-auto">Eyob Derese</button>
           </div>
-        </section>
 
-        <section class="card">
-          <figure class="image-content">
-            <img src="images/moshAmedani.jpg" alt="Mosh Amedani" />
+          <section class="aside__information row flex-column">
+            <div class="aside__contact d-flex gap-3">
+              <span class="d-flex align-items-center">
+                <img
+                  class="h-50"
+                  src="images/icons/icons8-envelope-100.png"
+                  alt=""
+                />
+              </span>
+              <p class="align-self-center">
+                <span class="d-block">Email</span> eyob.derese@ aait.edu.et
+              </p>
+            </div>
 
-            <figcaption>
-              <a href="#">Mosh Amedani</a>,Googel claud engineer
-            </figcaption>
-          </figure>
-          <div class="content">
-            <h1>Let me tell you about Eyob</h1>
-            <p>
-              I highly recommend Eyob Derese as a software engineer who not only
-              possesses exceptional technical skills but also excels in
-              interpersonal communication. Eyob is not just proficient in coding
-              and problem-solving; he is also remarkably approachable and adept
-              at connecting with people. In my experience working with Eyob, I
-              have witnessed his ability to effectively communicate complex
-              technical concepts to both technical and non-technical
-              stakeholders. His approachability creates a positive and
-              collaborative work environment, making him an invaluable team
-              member. Eyob's willingness to engage in open and constructive
-              dialogue fosters a culture of innovation and shared understanding.
-            </p>
+            <div class="aside__contact d-flex gap-3">
+              <span class="d-flex align-items-center flex-grow-0">
+                <img
+                  class="h-50"
+                  src="images/icons/icons8-smartphone-100.png"
+                  alt=""
+                />
+              </span>
+              <p class="align-self-center">
+                <span class="d-block">Phone</span> +251-973385181
+              </p>
+            </div>
 
-            <button class="btn btn--small">Read More</button>
-          </div>
-        </section>
+            <div class="aside__contact d-flex gap-3">
+              <span class="d-flex align-items-center flex-grow-0">
+                <img
+                  class="h-50"
+                  src="images/icons/icons8-location-pin-100.png"
+                  alt=""
+                />
+              </span>
+              <div class="align-self-center">
+                <span class="d-block">Location</span>
+                <address>Addis Ababa, Ethiopia</address>
+              </div>
+            </div>
+            <div class="aside__contact d-flex gap-3">
+              <span class="d-flex align-items-center flex-grow-0">
+                <img
+                  class="h-50"
+                  src="images/icons/icons8-calendar-100.png"
+                  alt=""
+                />
+              </span>
+              <p class="align-self-center">
+                <span class="d-block">Birthday</span>20-05-2002
+              </p>
+            </div>
+          </section>
+        </aside>
 
-        <section class="card">
-          <figure class="image-content">
-            <img src="images/jelani.jpg" alt="Jelani Nelson" />
+        <main class="col-md-9">
+          <section class="container mt-4">
+            <div class="card">
+              <div class="row no-gutters flex-column-reverse flex-md-row">
+                <figure class="col-md-6">
+                  <img
+                    src="images/moshAmedani.jpg"
+                    class="card-img"
+                    alt="mosh"
+                  />
+                  <figcaption>
+                    <p class="card-text">
+                      <a href="#">Mosh Amedani</a>,Googel claud engineer
+                    </p>
+                  </figcaption>
+                </figure>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">Let me tell you about Eyob</h5>
+                    <p class="card-text">
+                      I highly recommend Eyob Derese as a software engineer who
+                      not only possesses exceptional technical skills but also
+                      excels in interpersonal communication. Eyob is not just
+                      proficient in coding and problem-solving; he is also
+                      remarkably approachable and adept at connecting with
+                      people. In my experience working with Eyob, I have
+                      witnessed his ability
+                    </p>
+                    <p class="card-text card-addtional-text d-none">
+                      to effectively communicate complex technical concepts to
+                      both technical and non-technical stakeholders. His
+                      approachability creates a positive and collaborative work
+                      environment, making him an invaluable team member. Eyob's
+                      willingness to engage in open and constructive dialogue
+                      fosters a culture of innovation and shared understanding.
+                    </p>
+                    <button class="btn btn-primary read-more-btn">
+                      Read More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="container mt-4">
+            <div class="card">
+              <div class="row no-gutters flex-column-reverse flex-md-row">
+                <figure class="col-md-6">
+                  <img
+                    src="images/Timnit_Gebru_crop.jpg"
+                    class="card-img"
+                    alt="Image Caption"
+                  />
+                  <figcaption>
+                    <p class="card-text">
+                      <a href="#">Dr. Timinit Gebru</a>, computer scientist
+                    </p>
+                  </figcaption>
+                </figure>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">Let me tell you about Eyob</h5>
+                    <p class="card-text">
+                      I highly recommend Eyob Derese as a software engineer who
+                      not only possesses exceptional technical skills but also
+                      excels in interpersonal communication. Eyob is not just
+                      proficient in coding and problem-solving; he is also
+                      remarkably approachable and adept at connecting with
+                      people. In my experience working with Eyob, I have
+                      witnessed his ability
+                    </p>
+                    <p class="card-text card-addtional-text d-none">
+                      to effectively communicate complex technical concepts to
+                      both technical and non-technical stakeholders. His
+                      approachability creates a positive and collaborative work
+                      environment, making him an invaluable team member. Eyob's
+                      willingness to engage in open and constructive dialogue
+                      fosters a culture of innovation and shared understanding.
+                    </p>
+                    <button class="btn btn-primary read-more-btn">
+                      Read More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="container mt-4">
+            <div class="card">
+              <div class="row no-gutters flex-column-reverse flex-md-row">
+                <figure class="col-md-6">
+                  <img src="images/jelani.jpg" class="card-img" alt="Jelani" />
+                  <figcaption>
+                    <p class="card-text">
+                      <a href="#">Jelani Nelson</a>,Professor of University of
+                      California
+                    </p>
+                  </figcaption>
+                </figure>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">Let me tell you about Eyob</h5>
+                    <p class="card-text">
+                      I highly recommend Eyob Derese as a software engineer who
+                      not only possesses exceptional technical skills but also
+                      excels in interpersonal communication. Eyob is not just
+                      proficient in coding and problem-solving; he is also
+                      remarkably approachable and adept at connecting with
+                      people. In my experience working with Eyob, I have
+                      witnessed his ability
+                    </p>
+                    <p class="card-text card-addtional-text d-none">
+                      to effectively communicate complex technical concepts to
+                      both technical and non-technical stakeholders. His
+                      approachability creates a positive and collaborative work
+                      environment, making him an invaluable team member. Eyob's
+                      willingness to engage in open and constructive dialogue
+                      fosters a culture of innovation and shared understanding.
+                    </p>
+                    <button class="btn btn-primary read-more-btn">
+                      Read More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>
 
-            <figcaption>
-              <a href="#">Jelani Nelson</a>,Professor of University of
-              California
-            </figcaption>
-          </figure>
-          <div class="content">
-            <h1>Let me tell you about Eyob</h1>
-            <p>
-              I highly recommend Eyob Derese as a software engineer who not only
-              possesses exceptional technical skills but also excels in
-              interpersonal communication. Eyob is not just proficient in coding
-              and problem-solving; he is also remarkably approachable and adept
-              at connecting with people. In my experience working with Eyob, I
-              have witnessed his ability to effectively communicate complex
-              technical concepts to both technical and non-technical
-              stakeholders. His approachability creates a positive and
-              collaborative work environment, making him an invaluable team
-              member. Eyob's willingness to engage in open and constructive
-              dialogue fosters a culture of innovation and shared understanding.
-            </p>
-
-            <button class="btn btn--small">Read More</button>
-          </div>
-        </section>
-      </main>
-    </div>
-
-    <footer>
-      <p class="copyright">
-        copyright &copy; 2023 devlelop with
-        <svg class="icon">
-          <use xlink:href="images/sprite.svg#red-heart-icon"></use>
-        </svg>
-        by Eyob
+    <footer
+      class="modal-footer bg-dark-subtle d-flex justify-content-center justify-content-sm-between p-2"
+    >
+      <p class="footer__copyright md:ml-10">
+        copyright &copy; 2023 devlelop by Eyob
       </p>
-      <div class="social-midea">
-        <a href="#">
-          <svg class="icon icon--white">
-            <use
-              xlink:href="images/sprite.svg#facebook-app-round-white-icon"
-            ></use>
-          </svg>
+      <div class="footer__social-midea d-flex">
+        <a href="#" class="w-50 h-50">
+          <img
+            class="w-50 h-50"
+            src="images/icons/facebook-app-round-white-icon.svg"
+            alt="facebook logo"
+          />
         </a>
-        <a href="#">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#x-social-media-black-icon"></use>
-          </svg>
-        </a>
-
-        <a href="#">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#telegram-white-icon"></use>
-          </svg>
+        <a href="#" class="w-50 h-50">
+          <img
+            class="w-50 h-50"
+            src="images/icons/x-social-media-black-icon.svg"
+            alt=""
+          />
         </a>
 
-        <a href="#">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#icons8-linkedin"></use>
-          </svg>
+        <a href="#" class="w-50 h-50">
+          <img
+            class="w-50 h-50"
+            src="images/icons/telegram-white-icon.svg"
+            alt=""
+          />
         </a>
 
-        <a href="#">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#icons8-github"></use>
-          </svg>
+        <a href="#" class="w-50 h-50">
+          <img
+            class="w-50 h-50"
+            src="images/icons/icons8-linkedin.svg"
+            alt=""
+          />
+        </a>
+
+        <a href="#" class="w-50 h-50">
+          <img class="w-50 h-50" src="images/icons/icons8-github.svg" alt="" />
         </a>
       </div>
     </footer>
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+
+    <script src="Js/script.js"></script>
   </body>
 </html>

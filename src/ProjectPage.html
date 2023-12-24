@@ -1,129 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Project</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
   </head>
-  <body>
+  <body class="bg-body-tertiary">
     <header>
-      <h2 class="logo">Eyob Derese</h2>
-
-      <button class="btn-tagle">
-        <svg class="icon-aside icon--white">
-          <use xlink:href="images/sprite.svg#three-horizontal-lines-icon"></use>
-        </svg>
-      </button>
+      <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Eyob Derese</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-row-reverse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="HomePage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutPage.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ProjectPage.html">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="RecommendationPage.html"
+                  >Recommendation</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CVPage.html">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ContactPage.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <div class="main-aside">
-      <main>
-        <section class="card">
-          <figure class="image-content">
-            <img src="images/UAV.png" alt="Mosh Amedani" />
-
-            <figcaption>develop 2018, ownd by ASTU</figcaption>
-          </figure>
-          <div class="content">
-            <h1>Grade 10 UAV project</h1>
-            <p>
-              The UAV project was not just about technology; it was about
-              addressing a real-world challenge. The idea was to utilize UAVs as
-              airborne messengers, broadcasting vital announcements to areas
-              where conventional communication infrastructure was lacking. This
-              innovative approach had the potential to bring information,
-              connectivity, and a sense of community to places that had been on
-              the periphery of technological progress.
-            </p>
+    <section class="main-aside container-fluid mt-5">
+      <div class="row d-flex mt-4 ms-4">
+        <aside class="col-md-3 bg-info d-none d-md-flex flex-column">
+          <div class="aside__header row p-4 gap-2">
+            <img
+              class="aside__image img-fluid"
+              src="images/cartoon.jpg"
+              alt="eyob's photo"
+            />
+            <button class="btn btn-primary w-75 m-auto">Eyob Derese</button>
           </div>
-        </section>
 
-        <section class="card">
-          <video class="video-content" controls>
-            <source src="images/gamehub.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <section class="aside__information row flex-column">
+            <div class="aside__contact d-flex gap-3">
+              <span class="d-flex align-items-center">
+                <img
+                  class="h-50"
+                  src="images/icons/icons8-envelope-100.png"
+                  alt=""
+                />
+              </span>
+              <p class="align-self-center">
+                <span class="d-block">Email</span> eyob.derese@ aait.edu.et
+              </p>
+            </div>
 
-          <div class="content">
-            <h1>Game Hub</h1>
-            <p>
-              Create a comprehensive game-hub website that serves as a
-              centralized platform for gamers. The website will offer a range of
-              features to connect gamers, explore new titles, discuss
-              strategies, and stay updated on the latest trends in the gaming
-              world.click
-              <a
-                href="https://video-l3f0etit1-eyob-dereses-projects.vercel.app/"
-                >here</a
-              >
-              for website
-            </p>
-          </div>
-        </section>
-        <section class="card">
-          <figure class="image-content">
-            <img src="images/e-commerce.png" alt="e-commerce" />
+            <div class="aside__contact d-flex gap-3">
+              <span class="d-flex align-items-center flex-grow-0">
+                <img
+                  class="h-50"
+                  src="images/icons/icons8-smartphone-100.png"
+                  alt=""
+                />
+              </span>
+              <p class="align-self-center">
+                <span class="d-block">Phone</span> +251-973385181
+              </p>
+            </div>
 
-            <figcaption>UI disign of gebyaye E-commerce</figcaption>
-          </figure>
-          <div class="content">
-            <h1>E-commerce Project</h1>
-            <p>
-              it was about creating a digital ecosystem that empowered
-              businesses and delighted customers. From optimizing database
-              queries for efficiency to ensuring that every feature aligned with
-              the documented requirements, my journey was a constant pursuit of
-              excellence.
-            </p>
-          </div>
-        </section>
-      </main>
-    </div>
+            <div class="aside__contact d-flex gap-3">
+              <span class="d-flex align-items-center flex-grow-0">
+                <img
+                  class="h-50"
+                  src="images/icons/icons8-location-pin-100.png"
+                  alt=""
+                />
+              </span>
+              <div class="align-self-center">
+                <span class="d-block">Location</span>
+                <address>Addis Ababa, Ethiopia</address>
+              </div>
+            </div>
+            <div class="aside__contact d-flex gap-3">
+              <span class="d-flex align-items-center flex-grow-0">
+                <img
+                  class="h-50"
+                  src="images/icons/icons8-calendar-100.png"
+                  alt=""
+                />
+              </span>
+              <p class="align-self-center">
+                <span class="d-block">Birthday</span>20-05-2002
+              </p>
+            </div>
+          </section>
+        </aside>
 
-    <footer>
-      <p class="copyright">
-        copyright &copy; 2023 devlelop with
-        <svg class="icon">
-          <use xlink:href="images/sprite.svg#red-heart-icon"></use>
-        </svg>
-        by Eyob
+        <main class="col-md-9">
+          <section class="container mt-4">
+            <div class="card">
+              <div class="row no-gutters flex-column-reverse flex-md-row">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">Grade 10 UAV project</h5>
+                    <p class="card-text">
+                      The UAV project was not just about technology; it was
+                      about addressing a real-world challenge. The idea was to
+                      utilize UAVs as airborne messengers, broadcasting vital
+                      announcements to areas where conventional communication
+                      infrastructure was lacking. This innovative approach had
+                      the potential to bring information, connectivity, and a
+                      sense of community to places that had been on the
+                      periphery of technological progress.
+                    </p>
+                  </div>
+                </div>
+
+                <figure class="col-md-6">
+                  <img
+                    src="images/UAV.png"
+                    class="card-img h-75"
+                    alt="Eyobs Image"
+                  />
+                  <figcaption>develop 2018, ownd by ASTU</figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+          <section class="container mt-4">
+            <div class="card">
+              <div class="row no-gutters flex-column-reverse flex-md-row">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">GameHub</h5>
+                    <p class="card-text">
+                      Create a comprehensive game-hub website that serves as a
+                      centralized platform for gamers. The website will offer a
+                      range of features to connect gamers, explore new titles,
+                      discuss strategies, and stay updated on the latest trends
+                      in the gaming world.click
+                      <a
+                        href="https://video-l3f0etit1-eyob-dereses-projects.vercel.app/"
+                        >here</a
+                      >
+                      for website
+                    </p>
+                  </div>
+                </div>
+
+                <video class="col-md-6" controls muted>
+                  <source src="images/gamehub.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </section>
+          <section class="container mt-4">
+            <div class="card">
+              <div class="row no-gutters flex-column-reverse flex-md-row">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">Grade 10 UAV project</h5>
+                    <p class="card-text">
+                      The UAV project was not just about technology; it was
+                      about addressing a real-world challenge. The idea was to
+                      utilize UAVs as airborne messengers, broadcasting vital
+                      announcements to areas where conventional communication
+                      infrastructure was lacking. This innovative approach had
+                      the potential to bring information, connectivity, and a
+                      sense of community to places that had been on the
+                      periphery of technological progress.
+                    </p>
+                  </div>
+                </div>
+
+                <figure class="col-md-6">
+                  <img
+                    src="images/e-commerce.png"
+                    class="card-img h-75"
+                    alt="e-commerce"
+                  />
+                  <figcaption>UI disign of gebyaye E-commerce</figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>
+
+    <footer
+      class="modal-footer bg-dark-subtle d-flex justify-content-center justify-content-sm-between p-2"
+    >
+      <p class="footer__copyright md:ml-10">
+        copyright &copy; 2023 devlelop by Eyob
       </p>
-      <div class="social-midea">
-        <a href="#">
-          <svg class="icon icon--white">
-            <use
-              xlink:href="images/sprite.svg#facebook-app-round-white-icon"
-            ></use>
-          </svg>
+      <div class="footer__social-midea d-flex">
+        <a href="#" class="w-50 h-50">
+          <img
+            class="w-50 h-50"
+            src="images/icons/facebook-app-round-white-icon.svg"
+            alt="facebook logo"
+          />
         </a>
-        <a href="#">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#x-social-media-black-icon"></use>
-          </svg>
-        </a>
-
-        <a href="#">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#telegram-white-icon"></use>
-          </svg>
+        <a href="#" class="w-50 h-50">
+          <img
+            class="w-50 h-50"
+            src="images/icons/x-social-media-black-icon.svg"
+            alt=""
+          />
         </a>
 
-        <a href="#">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#icons8-linkedin"></use>
-          </svg>
+        <a href="#" class="w-50 h-50">
+          <img
+            class="w-50 h-50"
+            src="images/icons/telegram-white-icon.svg"
+            alt=""
+          />
         </a>
 
-        <a href="#">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#icons8-github"></use>
-          </svg>
+        <a href="#" class="w-50 h-50">
+          <img
+            class="w-50 h-50"
+            src="images/icons/icons8-linkedin.svg"
+            alt=""
+          />
+        </a>
+
+        <a href="#" class="w-50 h-50">
+          <img class="w-50 h-50" src="images/icons/icons8-github.svg" alt="" />
         </a>
       </div>
     </footer>
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
